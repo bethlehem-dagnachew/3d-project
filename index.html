@@ -4,20 +4,55 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Three.js Scene</title>
-    <style>
-      body {
-        margin: 0;
-      }
-      .webgl {
-        width: 100vw;
-        height: 100vh;
-        display: block;
-      }
-    </style>
+    <title>Three.js</title>
+    <style></style>
   </head>
   <body>
     <canvas class="webgl"></canvas>
+    <nav>
+      <a href="/">Three JS</a>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
     <script type="module" src="/main.js"></script>
   </body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body,
+    html {
+      overflow-x: hidden;
+    }
+    .webgl {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    nav {
+      color: white;
+      z-index: 2;
+      position: relative;
+      padding: 4rem 8rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 4rem;
+    }
+  </style>
 </html>
